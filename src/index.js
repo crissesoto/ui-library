@@ -1,5 +1,6 @@
 import Tooltip from './ui-library/tooltip';
 import Dropdown from './ui-library/dropdown';
+import Tabs from './ui-library/tabs';
 
 
 // create tooltip
@@ -17,3 +18,7 @@ dropdowns.forEach(dropdown => {
   const instance = new Dropdown(dropdown);
   instance.init();
 });
+
+
+// create tabs 
+const tabs = new Tabs(document.querySelector(".tabs")).init()
