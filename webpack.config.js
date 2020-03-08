@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: "./src/ui-library/index.js", //relative path
+    entry: "./src/index.js", //relative path
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, "dist/assets") //absolute path
