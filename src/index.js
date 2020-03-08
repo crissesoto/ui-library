@@ -1,6 +1,7 @@
 import Tooltip from './ui-library/tooltip';
 import Dropdown from './ui-library/dropdown';
 import Tabs from './ui-library/tabs';
+import Snackbar from './ui-library/snackbar';
 
 
 // create tooltip
@@ -21,4 +22,15 @@ dropdowns.forEach(dropdown => {
 
 
 // create tabs 
-const tabs = new Tabs(document.querySelector(".tabs")).init()
+const tabs = new Tabs(document.querySelector(".tabs")).init();
+
+// create snackbar
+const snackbar = new Snackbar();
+snackbar.init();
+
+// trigger the show method on the buttun
+
+const button = document.querySelector(".snackbar-trigger");
+button.addEventListener("click", () => {
+    snackbar.show("you clicked the button");
+})
